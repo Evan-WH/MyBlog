@@ -1,6 +1,10 @@
+const friendLink = require('./themeConfig/friendlink.js');
+const nav = require('./themeConfig/nav.js');
+const sidebar = require('./themeConfig/sidebar.js');
 module.exports = {
     title: "千篇壹律",
     description: '不存在十全十美的文章，就如同不存在彻头彻尾的绝望',
+    friendLink: '友情链接',
     dest: 'public',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -8,32 +12,8 @@ module.exports = {
     ],
     theme: 'reco',
     themeConfig: {
-        nav: [
-            { text: '首页', link: '/', icon: 'reco-home' },
-            { text: '时间线', link: '/timeline/', icon: 'reco-date' },
-            {
-                text: '文档',
-                icon: 'reco-message',
-                items: [
-                    { text: '千篇壹律', link: '/docs/theme-reco/' }
-                ]
-            },
-            {
-                text: '关于',
-                icon: 'reco-message',
-                items: [
-                    { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' }
-                ]
-            }
-        ],
-        sidebar: {
-            '/docs/theme-reco/': [
-                '',
-                'theme',
-                'plugin',
-                'api'
-            ]
-        },
+        nav,
+        sidebar,
         type: 'blog',
         // 博客设置
         blogConfig: {
@@ -46,39 +26,26 @@ module.exports = {
                 text: '标签' // 默认 “标签”
             }
         },
-        friendLink: [{
-                title: '午后南杂',
-                desc: 'Enjoy when you can, and endure when you must.',
-                email: '1156743527@qq.com',
-                link: 'https://www.recoluan.com'
-            },
-            {
-                title: '一木一浮生',
-                desc: 'xxxxx',
-                avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-                link: 'https://vuepress-theme-reco.recoluan.com'
-            },
-        ],
-
         logo: '/logo.png',
         // 搜索设置
         search: true,
         searchMaxSuggestions: 10,
         // 自动形成侧边导航
-        // sidebar: 'auto',
+        sidebar: 'auto',
         // 最后更新时间
-        lastUpdated: 'Last Updated',
+        lastUpdated: '最后一次更新',
         // 作者
-        author: 'reco_luan',
+        author: '青墨',
         // 作者头像
         authorAvatar: '/avatar.png',
         // 备案号
-        record: 'xxxx',
+        record: '未备案',
         // 项目开始时间
-        startYear: '2017'
-            /**
-             * 密钥 (if your blog is private)
-             */
+        startYear: '2021',
+        friendLink
+        /**
+         * 密钥 (if your blog is private)
+         */
 
         // keyPage: {
         //   keys: ['your password'],
@@ -94,8 +61,10 @@ module.exports = {
         //   appId: '...',// your appId
         //   appKey: '...', // your appKey
         // }
+
     },
     markdown: {
         lineNumbers: true
-    }
+    },
+
 }
