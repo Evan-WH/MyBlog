@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: “不存在十全十美的文章，就如同不存在彻头彻尾的绝望”
+tagline: 一木一浮生.
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',

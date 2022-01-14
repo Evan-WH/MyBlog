@@ -1,5 +1,5 @@
 module.exports = {
-    title: "vuepress-theme-reco",
+    title: "千篇壹律",
     description: 'A simple and beautiful vuepress blog theme .',
     dest: 'public',
     head: [
@@ -9,17 +9,17 @@ module.exports = {
     theme: 'reco',
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/', icon: 'reco-home' },
-            { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+            { text: '首页', link: '/', icon: 'reco-home' },
+            { text: '时间线', link: '/timeline/', icon: 'reco-date' },
             {
-                text: 'Docs',
+                text: '文档',
                 icon: 'reco-message',
                 items: [
-                    { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+                    { text: '千篇壹律', link: '/docs/theme-reco/' }
                 ]
             },
             {
-                text: 'Contact',
+                text: '关于',
                 icon: 'reco-message',
                 items: [
                     { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' }
@@ -43,7 +43,7 @@ module.exports = {
             },
             tag: {
                 location: 3, // 在导航栏菜单中所占的位置，默认3
-                text: 'Tag' // 默认 “标签”
+                text: '标签' // 默认 “标签”
             }
         },
         friendLink: [{
@@ -53,8 +53,8 @@ module.exports = {
                 link: 'https://www.recoluan.com'
             },
             {
-                title: 'vuepress-theme-reco',
-                desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+                title: '一木一浮生',
+                desc: 'xxxxx',
                 avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
                 link: 'https://vuepress-theme-reco.recoluan.com'
             },
