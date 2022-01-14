@@ -1,6 +1,6 @@
 module.exports = {
     title: "千篇壹律",
-    description: 'A simple and beautiful vuepress blog theme .',
+    description: '不存在十全十美的文章，就如同不存在彻头彻尾的绝望',
     dest: 'public',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -59,6 +59,7 @@ module.exports = {
                 link: 'https://vuepress-theme-reco.recoluan.com'
             },
         ],
+
         logo: '/logo.png',
         // 搜索设置
         search: true,
